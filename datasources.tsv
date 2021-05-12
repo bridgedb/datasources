@@ -84,7 +84,7 @@ Orphanet	On	http://www.orpha.net/consor/	https://identifiers.org/orphanet:$id	85
 Oryzabase	Ob	http://www.shigen.nig.ac.jp/rice/oryzabase	http://www.shigen.nig.ac.jp/rice/oryzabase/gateway/gatewayAction.do?target=symbol&id=$id	468	gene	Oryza sativa	1	Ob		Oryzabase	
 Other	O				gene		1	O		Other	
 Pathway Commons	Pc	http://www.pathwaycommons.org/pc/	http://www.pathwaycommons.org/pc/record2.do?id=$id	485991	pathway		1	urn:miriam:pathwaycommons	^\d+$	Pathway Commons   	
-PATO  pato  http://bioportal.bioontology.org/ontologies/PATO	http://purl.bioontology.org/ontology/PATO/PATO:$id	0001998	gene    1	urn:miriam:pato ^PATO:\d{7}$  PATO 
+PATO 	pato	http://bioportal.bioontology.org/ontologies/PATO	http://purl.bioontology.org/ontology/PATO/PATO:$id	0001998	gene		1	urn:miriam:pato	^PATO:\d{7}$	PATO	
 PDB	Pd	http://www.pdb.org/	http://www.rcsb.org/pdb/explore/explore.do?structureId=$id	2gc4	protein		0	urn:miriam:pdb	^[0-9][A-Za-z0-9]{3}$	Protein Data Bank	P638
 Pfam	Pf	http://pfam.sanger.ac.uk/	http://pfam.sanger.ac.uk/family/$id/	PF01234	protein		1	urn:miriam:pfam	^PF\d{5}$	Pfam	P3519
 PharmGKB Drug	Pgd	http://www.pharmgkb.org/	http://www.pharmgkb.org/drug/$id	PA448710	metabolite		1	urn:miriam:pharmgkb.drug	^PA\d+$	PharmGKB Drug	P7001
