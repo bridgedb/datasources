@@ -1,5 +1,5 @@
 generic_name	specific_name	short_name	symbol	ncbi
-Acetobacterium woodii		Aw	33952
+Acetobacterium	woodii		Aw	33952
 Anopheles	gambiae	Mosquito	Ag	7165
 Arabidopsis	thaliana	Arabidopsis	At	3702
 Aspergillus 	niger	Black mold	An	5061
@@ -12,8 +12,8 @@ Canis	familiaris	Dog	Cf	9615
 Ciona	intestinalis	Sea Squirt	Ci	7719
 Clostridium	thermocellum	Cthe	Ct	1515
 Danio	rerio	Zebrafish	Dr	7955
-Daphnia magna		Da	35525
-Daphnia pulex		Dp	6669
+Daphnia	magna	Da	35525
+Daphnia	pulex	Dp	6669
 Dasypus	novemcinctus	Armadillo	Dn	9361
 Drosophila	melanogaster	Fruitfly	Dm	7227
 Echinops	telfairi	Hedgehog	Et	9371
@@ -34,7 +34,7 @@ Oryctolagus	cuniculus	Rabbit	Oc	9986
 Oryza	sativa	Japanese Rice	Os	4530
 Oryzias	latipes	Medaka Fish	Ol	8090
 Pan 	troglodytes	Chimp	Pt	9598
-Plasmodium falciparum	Malaria parasite	Pf	5833
+Plasmodium	falciparum	Malaria parasite	Pf	5833
 Populus 	trichocarpa	Western Balsam Poplar	Pi	3694
 Rattus	norvegicus	Rat	Rn	10116
 Saccharomyces	cerevisiae	Yeast	Sc	4932
