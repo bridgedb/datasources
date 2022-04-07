@@ -88,7 +88,7 @@ Oryzabase	Ob	http://www.shigen.nig.ac.jp/rice/oryzabase	http://www.shigen.nig.ac
 Other	O				gene		1	O		Other	
 Pathway Commons	Pc	http://www.pathwaycommons.org/pc/	http://www.pathwaycommons.org/pc/record2.do?id=$id	485991	pathway		1	urn:miriam:pathwaycommons	^\d+$	Pathway Commons   	
 Pathway Ontology	PW	http://bioportal.bioontology.org/ontologies/PW	http://purl.bioontology.org/ontology/PW/PW:$id	0000208	pathway		1	urn:miriam:pw	^\d{7}$	Pathway Ontology	P7333
-PATO 	PATO	http://bioportal.bioontology.org/ontologies/PATO	http://purl.bioontology.org/ontology/PATO/PATO:$id	0001998	gene		1	urn:miriam:pato	^\d{7}$	PATO
+PATO 	PATO	http://bioportal.bioontology.org/ontologies/PATO	http://purl.bioontology.org/ontology/PATO/PATO:$id	0001998	gene		1	urn:miriam:pato	^\d{7}$	PATO	
 PDB	Pd	http://www.pdb.org/	http://www.rcsb.org/pdb/explore/explore.do?structureId=$id	2gc4	protein		0	urn:miriam:pdb	^[0-9][A-Za-z0-9]{3}$	Protein Data Bank	P638
 Pfam	Pf	https://pfam.xfam.org/	https://pfam.xfam.org/family/$id/	PF01234	protein		1	urn:miriam:pfam	^PF\d{5}$	Pfam	P3519
 PharmGKB Drug	Pgd	https://www.pharmgkb.org/	https://www.pharmgkb.org/drug/$id	PA448710	metabolite		1	urn:miriam:pharmgkb.drug	^PA\d+$	PharmGKB Drug	P7001
@@ -119,7 +119,7 @@ SubtiWiki	Bsu	http://www.subtiwiki.uni-goettingen.de/wiki/index.php/Main_Page	ht
 SUPFAM	Sf	http://supfam.org/SUPERFAMILY/	http://supfam.org/SUPERFAMILY/cgi-bin/scop.cgi?ipid=$id	SSF57615	protein		1	urn:miriam:supfam	^\w+$	SUPFAM	
 SWISS-MODEL	Sw	http://swissmodel.expasy.org/	http://swissmodel.expasy.org/repository/smr.php?sptr_ac=$id	P23298	protein		1	urn:miriam:swiss-model	^\w+$	SWISS-MODEL	
 SwissLipids	Sl	http://www.swisslipids.org/	http://www.swisslipids.org/#/entity/$id/	SLM:000048885	metabolite		1		^SML:\d+$	SwissLipids	
-Systems Biology Ontology	Sbo	http://www.ebi.ac.uk/sbo/	http://www.ebi.ac.uk/sbo/main/$id	SBO:0000262	ontology		1	urn:miriam:sbo	^SBO:\d{7}$	Systems Biology Ontology	
+Systems Biology Ontology	Sbo	http://www.ebi.ac.uk/sbo/	http://www.ebi.ac.uk/sbo/main/$id	SBO:0000262	ontology		1	urn:miriam:sbo	^SBO:\d{7}$	Systems Biology Ontology
 TAIR	A	http://arabidopsis.org/index.jsp	http://arabidopsis.org/servlets/TairObject?type=locus&name=$id	AT1G01030	gene	Arabidopsis thaliana	1	urn:miriam:tair.locus	^AT[1-5]G\d{5}$	TAIR Locus	
 TIGR	Ti	http://www.jcvi.org/		12012.t00308	gene		1	Ti		TIGR	
 TTD Drug	Td	http://bidd.nus.edu.sg/group/cjttd/TTD_HOME.asp	http://bidd.nus.edu.sg/group/cjttd/ZFTTDDRUG.asp?ID=$id	DAP000773	metabolite		1	urn:miriam:ttd.drug	^DAP\d+$	TTD Drug	
