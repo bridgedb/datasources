@@ -8,3 +8,13 @@ The following URLs can be used in downstream tools:
 * [https://bridgedb.github.io/datasources/datasources.tsv](https://bridgedb.github.io/datasources/datasources.tsv)
 * [https://bridgedb.github.io/datasources/datasources_headers.tsv](https://bridgedb.github.io/datasources/datasources_headers.tsv)
 * [https://bridgedb.github.io/datasources/organisms.tsv](https://bridgedb.github.io/datasources/organisms.tsv)
+
+## Testing
+
+There are tests for data integrity that can be run with the following commands
+in the shell:
+
+```bash
+$ pip install tox
+$ tox
+```
