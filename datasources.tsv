@@ -43,7 +43,7 @@ Guide to Pharmacology	Gpl	http://www.guidetopharmacology.org/	https://www.guidet
 Guide to Pharmacology Targets	Gpt	http://www.guidetopharmacology.org/	https://www.guidetopharmacology.org/GRAC/ObjectDisplayForward?objectId=$id	256	metabolite		1		^\d+$	Guide to Pharmacology	P595
 HGNC	H	http://www.genenames.org		DAPK1	gene	Homo sapiens	1	urn:miriam:hgnc.symbol	^[A-Za-z0-9]+	HGNC Symbol	P353
 HGNC Accession number	Hac	http://www.genenames.org	https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/$id	2674	gene	Homo sapiens	1	urn:miriam:hgnc	^(HGNC:)?\d{1,5}$	HGNC	P354
-HMDB	Ch	http://www.hmdb.ca/	http://www.hmdb.ca/metabolites/$id	HMDB00001	metabolite		1	urn:miriam:hmdb	^HMDB(\d{2})?\d{5}$	HMDB	P2057
+HMDB	Ch	http://www.hmdb.ca/	http://www.hmdb.ca/metabolites/$id	HMDB0000001	metabolite		1	urn:miriam:hmdb	^HMDB(\d{2})?\d{5}$	HMDB	P2057
 HomoloGene	Hg	http://www.ncbi.nlm.nih.gov/homologene/	http://www.ncbi.nlm.nih.gov/homologene/$id	1000	gene		1	urn:miriam:homologene	^\d+$	HomoloGene	P593
 HPRD	Hp	http://www.hprd.org/			interaction	Homo sapiens	1	urn:miriam:hprd		HPRD	
 Human Disease Ontology	Do	http://www.disease-ontology.org	https://identifiers.org/$id	doid:11337	unknown	Homo sapiens	1	urn:miriam:doid	^DOID\:\d+$	Disease Ontology	
