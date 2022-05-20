@@ -22,12 +22,18 @@ MANUAL = {
     "Ip": "interpro",
     "Mc": "metacyc.reaction",
     "PATO": "pato",
+    "Sbo": "sbo",
+    "Up": "upa",
+    "Rfam": "rfam",
+}
+SKIP = {
+    "Other",
 }
 
 
 def main():
-    headers_df = pd.read_csv(COLUMNS, sep='\t')
-    df = pd.read_csv(DATASOURCES, sep='\t', names=list(headers_df["header"]))
+    headers_df = pd.read_csv(COLUMNS, sep="\t")
+    df = pd.read_csv(DATASOURCES, sep="\t", names=list(headers_df["header"]))
 
     # Check MANUAL curation
     for key, value in MANUAL.items():
@@ -36,6 +42,11 @@ def main():
 
     rows = []
     for _, row in tqdm(df.iterrows()):
+        system_code = row["system_code"]
+        datasource_name = row["datasource_name"]
+        if datasource_name in SKIP or system_code in SKIP:
+            continue
+
         uri = row["uri"]
         if pd.notna(uri) and uri.startswith("urn:miriam:"):
             miriam_prefix = uri.removeprefix("urn:miriam:")
@@ -51,19 +62,25 @@ def main():
             if wikidata_prop in WIKIDATA_MAP:
                 continue
 
-        system_code = row["system_code"]
         if system_code in MANUAL:
             continue
-
         norm_sys_code = bioregistry.normalize_prefix(system_code)
         if norm_sys_code:
             raise ValueError(f'need to add: "{system_code}": "{norm_sys_code}",')
 
+        if datasource_name in MANUAL:
+            continue
+        norm_datasource_name = bioregistry.normalize_prefix(datasource_name)
+        if norm_datasource_name:
+            raise ValueError(
+                f'need to add: "{datasource_name}": "{norm_datasource_name}",'
+            )
+
         rows.append(row)
 
     curation_df = pd.DataFrame(rows, columns=df.columns)
-    curation_df.to_csv(CURATION, sep='\t', index=False)
+    curation_df.to_csv(CURATION, sep="\t", index=False)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
