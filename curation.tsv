@@ -1,7 +1,0 @@
-datasource_name	system_code	website_url	linkout_pattern	example_identifier	entity_identified	single_species	identifier_type	uri	regex	official_name	wikidata_property	bioregistry
-Gramene Arabidopsis	EnAt	http://www.gramene.org/	http://www.gramene.org/Arabidopsis_thaliana/Gene/Summary?g=$id	ATMG01360-TAIR-G	gene	Arabidopsis thaliana	1	EnAt	AT[\dCM]G\d{5}\-TAIR\-G	Gramene Arabidopsis		
-Gramene Maize	EnZm	http://www.ensembl.org	http://www.maizesequence.org/Zea_mays/Gene/Summary?g=$id	GRMZM2G174107	gene		1	EnZm		Gramene Maize		
-Gramene Rice	EnOj	http://www.gramene.org/	http://www.gramene.org/Oryza_sativa/Gene/Summary?db=core;g=$id	osa-MIR171a	gene		1	EnOj		Gramene Rice		
-Rice Ensembl Gene	Os	http://www.gramene.org/Oryza_sativa	http://www.gramene.org/Oryza_sativa/geneview?gene=$id	LOC_Os04g54800	gene	Oryza sativa	1	Os		Rice Ensembl Gene		
-Wheat gene names	Wn	http://wheat.pw.usda.gov/	http://wheat.pw.usda.gov/report?class=gene;name=$id	5S-Rrna-D1_(Triticum)	gene	Triticum aestivum	1	Wn		Wheat gene names		
-Wheat gene refs	Wr	http://wheat.pw.usda.gov/	http://wheat.pw.usda.gov/cgi-bin/graingenes/report.cgi?class=reference&name=$id	WGS-95-1333	probe	Triticum aestivum	0	Wr		Wheat gene refs		
