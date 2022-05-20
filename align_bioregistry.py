@@ -52,13 +52,16 @@ def main():
             raise ValueError(f"Invalid bioregistry prefix in manual mapping: {value}")
 
     rows = []
+    prefixes = []
     for _, row in tqdm(df.iterrows()):
         if pd.isna(row.get("linkout_pattern")):
+            prefixes.append(None)
             continue
 
         system_code = row["system_code"]
         datasource_name = row["datasource_name"]
         if datasource_name in SKIP or system_code in SKIP:
+            prefixes.append(None)
             continue
 
         uri = row["uri"]
@@ -66,20 +69,24 @@ def main():
             miriam_prefix = uri.removeprefix("urn:miriam:")
             br_prefix = MIRIAM_MAP.get(miriam_prefix)
             if br_prefix is not None:
+                prefixes.append(br_prefix)
                 continue
 
         wikidata_prop = row["wikidata_property"]
         if pd.notna(wikidata_prop):
             if wikidata_prop in WIKIDATA_MAP:
+                prefixes.append(WIKIDATA_MAP[wikidata_prop])
                 continue
 
         if system_code in MANUAL:
+            prefixes.append(MANUAL[system_code])
             continue
         norm_sys_code = bioregistry.normalize_prefix(system_code)
         if norm_sys_code:
             raise ValueError(f'need to add: "{system_code}": "{norm_sys_code}",')
 
         if datasource_name in MANUAL:
+            prefixes.append(MANUAL[datasource_name])
             continue
         norm_datasource_name = bioregistry.normalize_prefix(datasource_name)
         if norm_datasource_name:
@@ -87,7 +94,11 @@ def main():
                 f'need to add: "{datasource_name}": "{norm_datasource_name}",'
             )
 
+        prefixes.append(None)
         rows.append(row)
+
+    df["bioregistry"] = prefixes
+    df.to_csv(DATASOURCES, index=False, header=False, sep='\t')
 
     curation_df = pd.DataFrame(rows, columns=df.columns)
     curation_df.to_csv(CURATION, sep="\t", index=False)
