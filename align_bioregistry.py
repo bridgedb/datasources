@@ -31,10 +31,14 @@ MANUAL = {
     "XMetDB": "xmetdb",
     "Brl": "brenda.ligand",
     "Gg": "gramene.gene",
-    "Ob": "oryzabase.gene"
+    "Ob": "oryzabase.gene",
+    "SPRINT": "sprint",
+    "Gl": "gramene.reference",
 }
 SKIP = {
     "Other",
+    "BIND",  # doesn't exist anymore
+    "OpenTargets",  # is a provider for ensembl gene
 }
 
 
