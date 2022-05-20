@@ -25,6 +25,12 @@ MANUAL = {
     "Sbo": "sbo",
     "Up": "upa",
     "Rfam": "rfam",
+    "MaizeGDB": "maizegdb.locus",
+    "SwissLipids": "swisslipid",
+    "VMH metabolite": "vmhmetabolite",
+    "XMetDB": "xmetdb",
+    "Brl": "brenda.ligand",
+    "Gg": "gramene.gene",
 }
 SKIP = {
     "Other",
@@ -52,10 +58,7 @@ def main():
             miriam_prefix = uri.removeprefix("urn:miriam:")
             br_prefix = MIRIAM_MAP.get(miriam_prefix)
             if br_prefix is not None:
-                # tqdm.write(f"mapped MIRIAM prefix {miriam_prefix} to Bioregistry prefix {br_prefix}")
                 continue
-            else:
-                tqdm.write(f"could not map MIRIAM prefix {miriam_prefix}")
 
         wikidata_prop = row["wikidata_property"]
         if pd.notna(wikidata_prop):
