@@ -31,6 +31,7 @@ MANUAL = {
     "XMetDB": "xmetdb",
     "Brl": "brenda.ligand",
     "Gg": "gramene.gene",
+    "Ob": "oryzabase.gene"
 }
 SKIP = {
     "Other",
@@ -48,6 +49,9 @@ def main():
 
     rows = []
     for _, row in tqdm(df.iterrows()):
+        if pd.isna(row.get("linkout_pattern")):
+            continue
+
         system_code = row["system_code"]
         datasource_name = row["datasource_name"]
         if datasource_name in SKIP or system_code in SKIP:
