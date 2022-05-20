@@ -34,6 +34,8 @@ class TestIntegrity(unittest.TestCase):
         """Test that Bioregistry prefixes are valid."""
         for i, line in enumerate(self.rows, start=1):
             resource, bioregistry_prefix = line[0], line[12]
+            if not bioregistry_prefix:
+                continue
             with self.subTest(resource=resource, prefix=bioregistry_prefix):
                 norm_prefix = bioregistry.normalize_prefix(bioregistry_prefix)
                 self.assertIsNotNone(norm_prefix, msg="unrecognized Bioregistry prefix")
