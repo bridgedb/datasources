@@ -4,6 +4,8 @@ import csv
 import unittest
 from pathlib import Path
 
+import bioregistry
+
 HERE = Path(__file__).parent.resolve()
 ROOT = HERE.parent.resolve()
 HEADERS_PATH = ROOT.joinpath("datasources_headers.tsv")
@@ -30,3 +32,9 @@ class TestIntegrity(unittest.TestCase):
 
     def test_valid_bioregistry(self):
         """Test that Bioregistry prefixes are valid."""
+        for i, line in enumerate(self.rows, start=1):
+            resource, bioregistry_prefix = line[0], line[12]
+            with self.subTest(resource=resource, prefix=bioregistry_prefix):
+                norm_prefix = bioregistry.normalize_prefix(bioregistry_prefix)
+                self.assertIsNotNone(norm_prefix, msg="unrecognized Bioregistry prefix")
+                self.assertEqual(bioregistry_prefix, norm_prefix, msg="unstandardized Bioregistry prefix")
