@@ -28,7 +28,9 @@ class TestIntegrity(unittest.TestCase):
         """Test the row lengths."""
         for i, line in enumerate(self.rows, start=1):
             self.assertEqual(
-                len(self.columns), len(line), msg=f"Row {i} has the wrong number of columns"
+                len(self.columns),
+                len(line),
+                msg=f"Row {i} has the wrong number of columns",
             )
 
     def test_valid_miriam(self):
@@ -54,6 +56,12 @@ class TestIntegrity(unittest.TestCase):
                 continue
             with self.subTest(resource=resource, prefix=bioregistry_prefix):
                 norm_prefix = bioregistry.normalize_prefix(bioregistry_prefix)
-                self.assertIsNotNone(norm_prefix,
-                                     msg=f"unrecognized Bioregistry prefix: {bioregistry_prefix} in {resource}")
-                self.assertEqual(bioregistry_prefix, norm_prefix, msg="unstandardized Bioregistry prefix")
+                self.assertIsNotNone(
+                    norm_prefix,
+                    msg=f"unrecognized Bioregistry prefix: {bioregistry_prefix} in {resource}",
+                )
+                self.assertEqual(
+                    bioregistry_prefix,
+                    norm_prefix,
+                    msg="unstandardized Bioregistry prefix",
+                )
