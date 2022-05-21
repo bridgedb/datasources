@@ -4,6 +4,7 @@ import csv
 import unittest
 from pathlib import Path
 
+import bioregistry
 from bioregistry.external.miriam import get_miriam
 
 HERE = Path(__file__).parent.resolve()
@@ -44,3 +45,15 @@ class TestIntegrity(unittest.TestCase):
                     valid_miriam_prefixes,
                     msg=f"\n\t[line {i}] Invalid MIRIAM prefix for {resource}: {uri}",
                 )
+
+    def test_valid_bioregistry(self):
+        """Test that Bioregistry prefixes are valid."""
+        for i, line in enumerate(self.rows, start=1):
+            resource, bioregistry_prefix = line[0], line[12]
+            if not bioregistry_prefix:
+                continue
+            with self.subTest(resource=resource, prefix=bioregistry_prefix):
+                norm_prefix = bioregistry.normalize_prefix(bioregistry_prefix)
+                self.assertIsNotNone(norm_prefix,
+                                     msg=f"unrecognized Bioregistry prefix: {bioregistry_prefix} in {resource}")
+                self.assertEqual(bioregistry_prefix, norm_prefix, msg="unstandardized Bioregistry prefix")
