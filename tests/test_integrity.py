@@ -38,5 +38,5 @@ class TestIntegrity(unittest.TestCase):
                 continue
             with self.subTest(resource=resource, prefix=bioregistry_prefix):
                 norm_prefix = bioregistry.normalize_prefix(bioregistry_prefix)
-                self.assertIsNotNone(norm_prefix, msg="unrecognized Bioregistry prefix")
+                self.assertIsNotNone(norm_prefix, msg=f"unrecognized Bioregistry prefix: {bioregistry_prefix} in {resource}")
                 self.assertEqual(bioregistry_prefix, norm_prefix, msg="unstandardized Bioregistry prefix")
