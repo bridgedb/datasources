@@ -41,17 +41,17 @@ Gramene Pathway	Gp	http://www.gramene.org/pathway		AAH72400	pathway		1	Gp		Grame
 Gramene Rice	EnOj	http://www.gramene.org/	http://www.gramene.org/Oryza_sativa/Gene/Summary?db=core;g=$id	osa-MIR171a	gene		1	EnOj		Gramene Rice		
 Guide to Pharmacology	Gpl	http://www.guidetopharmacology.org/	https://www.guidetopharmacology.org/GRAC/LigandDisplayForward?ligandId=$id	1627	gene		1		^\d+$	Guide to Pharmacology Targets	P5458	iuphar.receptor
 Guide to Pharmacology Targets	Gpt	http://www.guidetopharmacology.org/	https://www.guidetopharmacology.org/GRAC/ObjectDisplayForward?objectId=$id	256	metabolite		1		^\d+$	Guide to Pharmacology	P595	iuphar.ligand
-HGNC	H	http://www.genenames.org		DAPK1	gene	Homo sapiens	1	urn:miriam:hgnc.symbol	^[A-Za-z0-9]+	HGNC Symbol	P353	
+HGNC	H	http://www.genenames.org		DAPK1	gene	Homo sapiens	1	urn:miriam:hgnc.symbol	^[A-Za-z0-9]+	HGNC Symbol	P353	hgnc.symbol
 HGNC Accession number	Hac	http://www.genenames.org	https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/$id	2674	gene	Homo sapiens	1	urn:miriam:hgnc	^(HGNC:)?\d{1,5}$	HGNC	P354	hgnc
 HMDB	Ch	http://www.hmdb.ca/	http://www.hmdb.ca/metabolites/$id	HMDB0000001	metabolite		1	urn:miriam:hmdb	^HMDB(\d{2})?\d{5}$	HMDB	P2057	hmdb
 HomoloGene	Hg	http://www.ncbi.nlm.nih.gov/homologene/	http://www.ncbi.nlm.nih.gov/homologene/$id	1000	gene		1	urn:miriam:homologene	^\d+$	HomoloGene	P593	homologene
-HPRD	Hp	http://www.hprd.org/			interaction	Homo sapiens	1	urn:miriam:hprd		HPRD		
+HPRD	Hp	http://www.hprd.org/			interaction	Homo sapiens	1	urn:miriam:hprd		HPRD		hprd
 Human Disease Ontology	Do	http://www.disease-ontology.org	https://identifiers.org/$id	doid:11337	unknown	Homo sapiens	1	urn:miriam:doid	^DOID\:\d+$	Disease Ontology		doid
 ICD-9	ICD9	http://www.who.int/classifications/icd/en/	http://www.icd9data.com/getICD9Code.ashx?icd9=$id	104	unknown	Homo sapiens	1	ICD9	^\d+$	International Classification of Diseases		icd9
 ICD-10	ICD10	http://www.who.int/classifications/icd/en/	http://apps.who.int/classifications/icd10/browse/2010/en#/{$id}	C34	unknown	Homo sapiens	1	ICD10	^[A-Z]\d+(\.[-\d+])?$	International Classification of Diseases		icd10
-ICD-11	ICD11	http://www.who.int/classifications/icd/en/		1A95	unknown	Homo sapiens	1	ICD11	^([A-Z]|\d)+(\d|[A-Z])\d+$	International Classification of Diseases		
-InChIKey	Ik	http://inchi.org/		QTBSBXVTEAMEQO-UHFFFAOYSA-N	metabolite		1	urn:miriam:inchikey	^[A-Z]{14}\-[A-Z]{10}(\-[A-Z])?	Standard InChIKey	P235	
+ICD-11	ICD11	http://www.who.int/classifications/icd/en/		1A95	unknown	Homo sapiens	1	ICD11	^([A-Z]|\d)+(\d|[A-Z])\d+$	International Classification of Diseases		icd11
 Illumina	Il	http://www.illumina.com/		ILMN_5668	probe		0	Il	ILMN_\d+	Illumina		illumina.probe
+InChIKey	Ik	http://inchi.org/		QTBSBXVTEAMEQO-UHFFFAOYSA-N	metabolite		1	urn:miriam:inchikey	^[A-Z]{14}\-[A-Z]{10}(\-[A-Z])?	Standard InChIKey	P235	inchikey
 IntAct	Ia	http://www.ebi.ac.uk/intact/	http://www.ebi.ac.uk/intact/pages/details/details.xhtml?interactionAc=$id	EBI-2307691	interaction		1	urn:miriam:intact	^EBI\-[0-9]+$	IntAct		intact
 InterPro	I	http://www.ebi.ac.uk/interpro/	http://www.ebi.ac.uk/interpro/DisplayIproEntry?ac=$id	IPR000100	protein		1	urn:miriam:interpro	^IPR\d{6}$	InterPro	P2926	interpro
 IPI	Ip	http://www.ebi.ac.uk/IPI	http://www.ebi.ac.uk/cgi-bin/dbfetch?db=IPI&id=$id&format=default	IPI00000001	protein		1	urn:miriam:ipi	^IPI\d{8}$	IPI		interpro
