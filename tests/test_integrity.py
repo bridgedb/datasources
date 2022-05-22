@@ -48,6 +48,15 @@ class TestIntegrity(unittest.TestCase):
                     msg=f"\n\t[line {i}] Invalid MIRIAM prefix for {resource}: {uri}",
                 )
 
+    def test_patterns(self):
+        """Check the example identifiers pass the given regular expressions."""
+        for i, line in enumerate(self.rows, start=1):
+            resource, example, pattern = line[0], line[4], line[9]
+            if not example or not pattern:
+                continue
+            with self.subTest(resource=resource, example=example, pattern=pattern):
+                self.assertRegex(example, pattern)
+
     def test_valid_bioregistry(self):
         """Test that Bioregistry prefixes are valid."""
         for i, line in enumerate(self.rows, start=1):
