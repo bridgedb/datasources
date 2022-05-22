@@ -99,7 +99,7 @@ def main():
         rows.append(row)
 
     df["bioregistry"] = prefixes
-    df.to_csv(DATASOURCES, index=False, header=False, sep='\t')
+    df.to_csv(DATASOURCES, index=False, header=False, sep="\t")
 
     curation_df = pd.DataFrame(rows, columns=df.columns)
     curation_df.to_csv(CURATION, sep="\t", index=False)
