@@ -27,8 +27,19 @@ class TestIntegrity(unittest.TestCase):
         """Test the row lengths."""
         for i, line in enumerate(self.rows, start=1):
             self.assertEqual(
-                len(self.columns), len(line), msg=f"Row {i} has the wrong number of columns"
+                len(self.columns),
+                len(line),
+                msg=f"Row {i} has the wrong number of columns",
             )
+
+    def test_patterns(self):
+        """Check the example identifiers pass the given regular expressions."""
+        for i, line in enumerate(self.rows, start=1):
+            resource, example, pattern = line[0], line[4], line[9]
+            if not example or not pattern:
+                continue
+            with self.subTest(resource=resource, example=example, pattern=pattern):
+                self.assertRegex(example, pattern)
 
     def test_valid_bioregistry(self):
         """Test that Bioregistry prefixes are valid."""
@@ -38,5 +49,12 @@ class TestIntegrity(unittest.TestCase):
                 continue
             with self.subTest(resource=resource, prefix=bioregistry_prefix):
                 norm_prefix = bioregistry.normalize_prefix(bioregistry_prefix)
-                self.assertIsNotNone(norm_prefix, msg=f"unrecognized Bioregistry prefix: {bioregistry_prefix} in {resource}")
-                self.assertEqual(bioregistry_prefix, norm_prefix, msg="unstandardized Bioregistry prefix")
+                self.assertIsNotNone(
+                    norm_prefix,
+                    msg=f"unrecognized Bioregistry prefix: {bioregistry_prefix} in {resource}",
+                )
+                self.assertEqual(
+                    bioregistry_prefix,
+                    norm_prefix,
+                    msg="unstandardized Bioregistry prefix",
+                )
