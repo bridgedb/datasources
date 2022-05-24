@@ -130,8 +130,8 @@ UMLS CUI	Cu	https://www.nlm.nih.gov/research/umls/rxnorm/index.html	https://www.
 Unipathway	Up	http://www.grenoble.prabi.fr/obiwarehouse/unipathway	http://www.grenoble.prabi.fr/obiwarehouse/unipathway/upa?upid=$id	UPA00206	pathway		1	urn:miriam:unipathway	^UPA\d{5}$	Unipathway		upa
 Uniprot-TrEMBL	S	http://www.uniprot.org/	http://www.uniprot.org/uniprot/$id	P62158	protein		1	urn:miriam:uniprot	^([A-N,R-Z][0-9][A-Z][A-Z, 0-9][A-Z, 0-9][0-9])|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\.\d+)?|([A-N,R-Z][0-9][A-Z][A-Z, 0-9][A-Z, 0-9][0-9][A-Z][A-Z, 0-9][A-Z, 0-9][0-9])$	UniProtKB/TrEMBL	P352	uniprot
 VMH metabolite	VmhM	http://www.vmh.life	https://www.vmh.life/#metabolite/$id	h2o	metabolite		1		[a-zA-Z0-9_\(\_\)\[\]]+	VMH Life_Metabolite		vmhmetabolite
-Wheat gene names	Wn	http://wheat.pw.usda.gov/	http://wheat.pw.usda.gov/report?class=gene;name=$id	5S-Rrna-D1_(Triticum)	gene	Triticum aestivum	1	Wn		Wheat gene names		
-Wheat gene refs	Wr	http://wheat.pw.usda.gov/	http://wheat.pw.usda.gov/cgi-bin/graingenes/report.cgi?class=reference&name=$id	WGS-95-1333	probe	Triticum aestivum	0	Wr		Wheat gene refs		
+Wheat gene names	Wn	http://wheat.pw.usda.gov/	http://wheat.pw.usda.gov/report?class=gene;name=$id	1-FEH+w3	gene	Triticum aestivum	1	Wn		Wheat gene names		graingenes.symbol
+Wheat gene refs	Wr	http://wheat.pw.usda.gov/	http://wheat.pw.usda.gov/cgi-bin/graingenes/report.cgi?class=reference&name=$id	WGS-95-1333	probe	Triticum aestivum	0	Wr		Wheat gene refs		graingenes.reference
 WikiGenes	Wg	http://www.wikigenes.org/	https://www.wikigenes.org/e/gene/e/$id.html	7157	gene		0	urn:miriam:wikigenes		WikiGenes	P351	wikigenes
 WikiPathways	Wp	http://www.wikipathways.org/	https://www.wikipathways.org/instance/$id	WP100	pathway		1	urn:miriam:wikipathways	WP\d{1,5}(_r\d+)?	WikiPathways	P2410	wikipathways
 Wikidata	Wd	http://www.wikidata.org	https://scholia.toolforge.org/$id	Q407962	metabolite		1	urn:miriam:wikidata	^Q\d+$	Wikidata		wikidata
