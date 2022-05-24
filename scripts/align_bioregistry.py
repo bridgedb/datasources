@@ -4,6 +4,7 @@ import pandas as pd
 from tqdm import tqdm
 
 import bioregistry
+from tabulate import tabulate
 
 HERE = Path(__file__).parent.resolve()
 ROOT = HERE.parent.resolve()
@@ -107,6 +108,7 @@ def main():
     df.to_csv(DATASOURCES, index=False, header=False, sep="\t")
 
     curation_df = pd.DataFrame(rows, columns=df.columns)
+    print(tabulate(curation_df.values, headers=list(curation_df.columns), tablefmt="github"))
     for key in [
         "entity_identified",
         "bioregistry",
