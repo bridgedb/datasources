@@ -26,11 +26,12 @@ class TestIntegrity(unittest.TestCase):
     def test_lengths(self):
         """Test the row lengths."""
         for i, line in enumerate(self.rows, start=1):
-            self.assertEqual(
-                len(self.columns),
-                len(line),
-                msg=f"Row {i} has the wrong number of columns",
-            )
+            with self.subTest(line=i, resource=line[0]):
+                self.assertEqual(
+                    len(self.columns),
+                    len(line),
+                    msg=f"Row {i} has the wrong number of columns",
+                )
 
     def test_patterns(self):
         """Check the example identifiers pass the given regular expressions."""
