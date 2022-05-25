@@ -5,6 +5,7 @@ import unittest
 from pathlib import Path
 
 import bioregistry
+from bioregistry.external.miriam import get_miriam
 
 HERE = Path(__file__).parent.resolve()
 ROOT = HERE.parent.resolve()
@@ -31,6 +32,21 @@ class TestIntegrity(unittest.TestCase):
                     len(self.columns),
                     len(line),
                     msg=f"Row {i} has the wrong number of columns",
+                )
+
+    def test_valid_miriam(self):
+        """Test that MIRIAM prefixes are valid."""
+        valid_miriam_prefixes = set(get_miriam())
+        for i, line in enumerate(self.rows, start=1):
+            resource, uri = line[0], line[8]
+            if not uri.startswith("urn:miriam"):
+                continue
+            miriam_prefix = uri.removeprefix("urn:miriam:")
+            with self.subTest(resource=resource, miriam=miriam_prefix):
+                self.assertIn(
+                    miriam_prefix,
+                    valid_miriam_prefixes,
+                    msg=f"\n\t[line {i}] Invalid MIRIAM prefix for {resource}: {uri}",
                 )
 
     def test_patterns(self):
