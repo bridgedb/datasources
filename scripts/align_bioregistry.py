@@ -4,6 +4,7 @@ import pandas as pd
 from tqdm import tqdm
 
 import bioregistry
+from tabulate import tabulate
 
 HERE = Path(__file__).parent.resolve()
 ROOT = HERE.parent.resolve()
@@ -55,6 +56,11 @@ def main():
     rows = []
     prefixes = []
     for _, row in tqdm(df.iterrows()):
+        bioregistry_prefix = row.get("bioregistry")
+        if pd.notna(bioregistry_prefix):
+            prefixes.append(bioregistry_prefix)
+            continue
+
         if pd.isna(row.get("linkout_pattern")):
             prefixes.append(None)
             continue
@@ -102,6 +108,16 @@ def main():
     df.to_csv(DATASOURCES, index=False, header=False, sep="\t")
 
     curation_df = pd.DataFrame(rows, columns=df.columns)
+    print(tabulate(curation_df.values, headers=list(curation_df.columns), tablefmt="github"))
+    for key in [
+        "entity_identified",
+        "bioregistry",
+        "system_code",
+        "uri",
+        "identifier_type",
+        "wikidata_property",
+    ]:
+        del curation_df[key]
     curation_df.to_csv(CURATION, sep="\t", index=False)
 
 
