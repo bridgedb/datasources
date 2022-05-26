@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/361110347.svg)](https://zenodo.org/badge/latestdoi/361110347)
+
 # datasources
 
 Repository with the BridgeDb data source. The reason to abstract this out is that other tools no longer depend
