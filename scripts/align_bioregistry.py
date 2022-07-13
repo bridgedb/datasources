@@ -108,7 +108,11 @@ def main():
     df.to_csv(DATASOURCES, index=False, header=False, sep="\t")
 
     curation_df = pd.DataFrame(rows, columns=df.columns)
-    print(tabulate(curation_df.values, headers=list(curation_df.columns), tablefmt="github"))
+    print(
+        tabulate(
+            curation_df.values, headers=list(curation_df.columns), tablefmt="github"
+        )
+    )
     for key in [
         "entity_identified",
         "bioregistry",
