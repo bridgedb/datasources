@@ -48,7 +48,7 @@ HomoloGene	Hg	http://www.ncbi.nlm.nih.gov/homologene/	http://www.ncbi.nlm.nih.go
 HPRD	Hp	http://www.hprd.org/			interaction	Homo sapiens	1	urn:miriam:hprd		HPRD		hprd	interaction
 Human Disease Ontology	Do	http://www.disease-ontology.org	https://disease-ontology.org/?id=$id	DOID:11337	unknown	Homo sapiens	1	urn:miriam:doid	^DOID\:\d+$	Disease Ontology		doid	unknown
 ICD-9	ICD9	http://www.who.int/classifications/icd/en/	http://www.icd9data.com/getICD9Code.ashx?icd9=$id	104	unknown	Homo sapiens	1	ICD9	^\d+$	International Classification of Diseases		icd9	unknown
-ICD-10	ICD10	http://www.who.int/classifications/icd/en/	http://apps.who.int/classifications/icd10/browse/2010/en#/{$id}	C34	unknown	Homo sapiens	1	ICD10	^[A-Z]\d+(\.[-\d+])?$	International Classification of Diseases  unknown			icd10
+ICD-10	ICD10	http://www.who.int/classifications/icd/en/	http://apps.who.int/classifications/icd10/browse/2010/en#/{$id}	C34	unknown	Homo sapiens	1	ICD10	^[A-Z]\d+(\.[-\d+])?$	International Classification of Diseases		icd10	unknown
 ICD-11	ICD11	http://www.who.int/classifications/icd/en/		1A95	unknown	Homo sapiens	1	ICD11	^([A-Z]|\d)+(\d|[A-Z])\d+$	International Classification of Diseases		icd11	unknown
 Illumina	Il	http://www.illumina.com/		ILMN_5668	probe		0	Il	ILMN_\d+	Illumina		illumina.probe	probe
 InChIKey	Ik	http://inchi.org/		QTBSBXVTEAMEQO-UHFFFAOYSA-N	metabolite		1	urn:miriam:inchikey	^[A-Z]{14}\-[A-Z]{10}(\-[A-Z])?	Standard InChIKey	P235	inchikey	metabolite
