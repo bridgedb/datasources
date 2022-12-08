@@ -104,7 +104,7 @@ PubMed	Pbm	https://pubmed.ncbi.nlm.nih.gov/	https://pubmed.ncbi.nlm.nih.gov/$id	
 Reactome	Re	http://www.reactome.org/	https://reactome.org/content/detail/$id	R-HSA-201451	pathway		1	urn:miriam:reactome	(^R-[A-Z]{3}-\d+(-\d+)?(\.\d+)?$)|(^REACT_\d+(\.\d+)?$)	Reactome	P3937	reactome	pathway
 RefSeq	Q	http://www.ncbi.nlm.nih.gov/projects/RefSeq/	https://www.ncbi.nlm.nih.gov/protein/$id	NP_012345	gene		1	urn:miriam:refseq	^(NC|AC|NG|NT|NW|NZ|NM|NR|XM|XR|NP|AP|XP|ZP)_\d+$	RefSeq	P656	refseq	gene
 RESID	Res	http://www.ebi.ac.uk/RESID/	http://srs.ebi.ac.uk/srsbin/cgi-bin/wgetz?-id+6JSUg1NA6u4+-e+[RESID:'$id']	AA0001	protein		1	urn:miriam:resid	^AA\d{4}$	RESID		resid	protein
-Rfam	Rf		http://www.sanger.ac.uk/cgi-bin/Rfam/getacc?$id	RF00066	gene		1	Rf	RF\d+	RFAM		rfam	gene
+Rfam	Rf		https://rfam.org/family/$id	RF00066	gene		1	Rf	RF\d+	RFAM		rfam	gene
 RGD	R	http://rgd.mcw.edu/	http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=$id	2018	gene	Rattus norvegicus	1	urn:miriam:rgd	^\d{4,7}$	Rat Genome Database	P3853	rgd	gene
 Rhea	Rh	http://www.ebi.ac.uk/rhea/	http://www.ebi.ac.uk/rhea/reaction.xhtml?id=$id	12345	interaction		1	urn:miriam:rhea	^\d{5}$	Rhea		rhea	interaction
 Rice Ensembl Gene	Os	http://www.gramene.org/Oryza_sativa	http://www.gramene.org/Oryza_sativa/geneview?gene=$id	Os04g54800	gene	Oryza sativa	1	Os		Rice Ensembl Gene			gene
