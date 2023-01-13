@@ -41,7 +41,7 @@ Gramene Pathway	Gp	http://www.gramene.org/pathway		AAH72400	pathway		1	Gp		Grame
 Gramene Rice	EnOj	http://www.gramene.org/	http://plants.ensembl.org/Oryza_sativa/Gene/Summary?db=otherfeatures;g=$id	Os05g0113900	gene		1	EnOj		Gramene Rice			gene
 Guide to Pharmacology	Gpl	http://www.guidetopharmacology.org/	https://www.guidetopharmacology.org/GRAC/LigandDisplayForward?ligandId=$id	1627	gene		1		^\d+$	Guide to Pharmacology Targets	P5458	iuphar.receptor	gene
 Guide to Pharmacology Targets	Gpt	http://www.guidetopharmacology.org/	https://www.guidetopharmacology.org/GRAC/ObjectDisplayForward?objectId=$id	256	metabolite		1		^\d+$	Guide to Pharmacology	P595	iuphar.ligand	metabolite
-HGNC	H	http://www.genenames.org		DAPK1	gene	Homo sapiens	1	urn:miriam:hgnc.symbol	^[A-Za-z0-9]+	HGNC Symbol	P353	hgnc.symbol	gene
+HGNC	H	http://www.genenames.org	https://www.genenames.org/data/gene-symbol-report/#!/symbol/$id	DAPK1	gene	Homo sapiens	1	urn:miriam:hgnc.symbol	^[A-Za-z0-9]+	HGNC Symbol	P353	hgnc.symbol	gene
 HGNC Accession number	Hac	http://www.genenames.org	https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/$id	2674	gene	Homo sapiens	1	urn:miriam:hgnc	^(HGNC:)?\d{1,5}$	HGNC	P354	hgnc	gene
 HMDB	Ch	http://www.hmdb.ca/	http://www.hmdb.ca/metabolites/$id	HMDB0000001	metabolite		1	urn:miriam:hmdb	^HMDB(\d{2})?\d{5}$	HMDB	P2057	hmdb	metabolite
 HomoloGene	Hg	http://www.ncbi.nlm.nih.gov/homologene/	http://www.ncbi.nlm.nih.gov/homologene/$id	1000	gene		1	urn:miriam:homologene	^\d+$	HomoloGene	P593	homologene	gene
