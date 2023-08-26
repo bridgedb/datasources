@@ -123,7 +123,7 @@ SubstrateDB	Sdb	http://substrate.burnham.org/	http://substrate.burnham.org/prote
 SubtiWiki	Bsu	http://www.subtiwiki.uni-goettingen.de/wiki/index.php/Main_Page	http://www.subtiwiki.uni-goettingen.de/wiki/index.php/$id	BSU29180	gene	Bacillus subtilis	1	urn:miriam:subtiwiki	^BSU\d{5}$	SubtiWiki		subtiwiki	gene
 SUPFAM	Sf	http://supfam.org/SUPERFAMILY/	http://supfam.org/SUPERFAMILY/cgi-bin/scop.cgi?ipid=$id	SSF57615	protein		1	urn:miriam:supfam	^\w+$	SUPFAM		supfam	protein
 SWISS-MODEL	Sw	http://swissmodel.expasy.org/	http://swissmodel.expasy.org/repository/smr.php?sptr_ac=$id	P23298	protein		1	urn:miriam:swiss-model	^\w+$	SWISS-MODEL		swiss-model	protein
-SwissLipids	Sl	http://www.swisslipids.org/	http://www.swisslipids.org/#/entity/$id/	SLM:000048885	metabolite		1		^SLM:\d+$	SwissLipids		swisslipid	metabolite
+SwissLipids	Sl	http://www.swisslipids.org/	http://www.swisslipids.org/#/entity/$id/	SLM:000048885	metabolite		1		^SLM:\d+$	SwissLipids		slm	metabolite
 Systems Biology Ontology	Sbo	http://www.ebi.ac.uk/sbo/	http://www.ebi.ac.uk/sbo/main/$id	SBO:0000262	ontology		1	urn:miriam:sbo	^SBO:\d{7}$	Systems Biology Ontology		sbo	ontology
 TAIR	A	http://arabidopsis.org/index.jsp	http://arabidopsis.org/servlets/TairObject?type=locus&name=$id	AT1G01030	gene	Arabidopsis thaliana	1	urn:miriam:tair.locus	^AT[1-5]G\d{5}$	TAIR Locus		tair.locus	gene
 TIGR	Ti	http://www.jcvi.org/		12012.t00308	gene		1	Ti		TIGR			gene
