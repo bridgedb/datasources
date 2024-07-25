@@ -1,21 +1,21 @@
 Affy	X			1851_s_at	probe		0	urn:miriam:affy.probeset	\d{4,}((_[asx])?_at)?	Affymetrix Probeset		affy.probeset	probe
-Agilent	Ag	http://agilent.com		A_24_P98555	probe		0	Ag	A_\d+_.+	Agilent		agilent.probe	probe
+Agilent	Ag	https://agilent.com		A_24_P98555	probe		0	Ag	A_\d+_.+	Agilent		agilent.probe	probe
 AOP-Wiki KE	AopKe	https://aopwiki.org/	https://aopwiki.org/events/$id	3	unknown		1	urn:miriam:aop.events	^\d+$	AOP-Wiki Key Events		aop.events	unknown,event
 AOP-Wiki AOP	Aop	https://aopwiki.org/	https://aopwiki.org/aops/$id	3	pathway		1	urn:miriam:aop	^\d+$	AOP-Wiki Adverse Outcome Pathway		aop	pathway
 AOP-Wiki KER	AopKer	https://aopwiki.org/	https://aopwiki.org/relationships/$id	5	interaction		1	urn:miriam:aop.relationships	^\d+$	AOP-Wiki Key Event Relationships		aop.relationships	interaction
 AOP-Wiki Stressor	AopS	https://aopwiki.org/	https://aopwiki.org/stressors/$id	222	metabolite		1	urn:miriam:aop.stressor	^\d+$	AOP-Wiki Stressor		aop.stressor	metabolite
 BIND	Bi	http://www.bind.ca/	http://www.bind.ca/Action?identifier=bindid&idsearch=$id		interaction		1		^\d+$	BIND			interaction
-BioCyc	Bc	http://biocyc.org	http://biocyc.org/getid?id=$id	ECOLI:CYT-D-UBIOX-CPLX	gene		1	urn:miriam:biocyc	^\w+\:[A-Za-z0-9-]+$	BioCyc		biocyc	gene
-BioGrid	Bg	http://thebiogrid.org/	http://thebiogrid.org/$id	31623	interaction		1	urn:miriam:biogrid	^\d+$	BioGRID		biogrid	interaction
-BioModels Database	Bm	http://www.ebi.ac.uk/biomodels/	http://www.ebi.ac.uk/biomodels-main/$id	BIOMD0000000048	pathway		1	urn:miriam:biomodels.db	^((BIOMD|MODEL)\d{10})|(BMID\d{12})$	BioModels Database		biomodels.db	pathway
+BioCyc	Bc	https://biocyc.org	https://biocyc.org/getid?id=$id	ECOLI:CYT-D-UBIOX-CPLX	gene		1	urn:miriam:biocyc	^\w+\:[A-Za-z0-9-]+$	BioCyc		biocyc	gene
+BioGrid	Bg	https://thebiogrid.org/	https://thebiogrid.org/$id	31623	interaction		1	urn:miriam:biogrid	^\d+$	BioGRID		biogrid	interaction
+BioModels Database	Bm	https://www.ebi.ac.uk/biomodels/	https://www.ebi.ac.uk/biomodels/$id	BIOMD0000000048	pathway		1	urn:miriam:biomodels.db	^((BIOMD|MODEL)\d{10})|(BMID\d{12})$	BioModels Database		biomodels.db	pathway
 BioSystems	Bs	http://www.ncbi.nlm.nih.gov/biosystems/	http://www.ncbi.nlm.nih.gov/biosystems/$id	1	pathway		1	urn:miriam:biosystems	^\d+$	BioSystems		biosystems	pathway
-BRENDA	Br	http://www.brenda-enzymes.org/	http://www.brenda-enzymes.org/enzyme.php?ecno=$id	1.1.1.1	protein		1	urn:miriam:brenda	^((\d+\.-\.-\.-)|(\d+\.\d+\.-\.-)|(\d+\.\d+\.\d+\.-)|(\d+\.\d+\.\d+\.\d+))$	BRENDA		brenda	protein
-BRENDA Ligands	Brl	http://www.brenda-enzymes.org/	http://www.brenda-enzymes.de/ligand.php?brenda_ligand_id=$id	278	metabolite		1	Brl	^\d+$	BRENDA Ligands		brenda.ligand	metabolite
+BRENDA	Br	https://www.brenda-enzymes.org/	https://www.brenda-enzymes.org/enzyme.php?ecno=$id	1.1.1.1	protein		1	urn:miriam:brenda	^((\d+\.-\.-\.-)|(\d+\.\d+\.-\.-)|(\d+\.\d+\.\d+\.-)|(\d+\.\d+\.\d+\.\d+))$	BRENDA		brenda	protein
+BRENDA Ligands	Brl	https://www.brenda-enzymes.org/	https://www.brenda-enzymes.de/ligand.php?brenda_ligand_id=$id	278	metabolite		1	Brl	^\d+$	BRENDA Ligands		brenda.ligand	metabolite
 CAS	Ca	https://commonchemistry.cas.org/	https://commonchemistry.cas.org/detail?cas_rn=$id	50-00-0	metabolite		1	urn:miriam:cas	^\d{1,7}\-\d{2}\-\d$	CAS	P231	cas	metabolite
-CCDS	Cc	http://identifiers.org/ccds/	http://www.ncbi.nlm.nih.gov/CCDS/CcdsBrowse.cgi?REQUEST=ALLFIELDS&DATA=$id	CCDS33337.1	gene		0	urn:miriam:ccds	^CCDS\d+\.\d+$	Consensus CDS		ccds	gene
+CCDS	Cc	https://identifiers.org/ccds/	https://www.ncbi.nlm.nih.gov/CCDS/CcdsBrowse.cgi?REQUEST=ALLFIELDS&DATA=$id	CCDS33337.1	gene		0	urn:miriam:ccds	^CCDS\d+\.\d+$	Consensus CDS		ccds	gene
 ChEMBL compound	Cl	https://www.ebi.ac.uk/chembldb/	https://www.ebi.ac.uk/chembl/compound/inspect/$id	CHEMBL308052	metabolite		1	urn:miriam:chembl.compound	^CHEMBL\d+$	ChEMBL compound	P592	chembl.compound	metabolite
-ChEBI	Ce	http://www.ebi.ac.uk/chebi/	http://www.ebi.ac.uk/chebi/searchId.do?chebiId=$id	CHEBI:36927	metabolite		1	urn:miriam:chebi	^(CHEBI:)?\d+$	ChEBI	P683	chebi	metabolite
-Chemspider	Cs	http://www.chemspider.com/	http://www.chemspider.com/Chemical-Structure.$id.html	56586	metabolite		1	urn:miriam:chemspider	^\d+$	ChemSpider	P661	chemspider	metabolite
+ChEBI	Ce	https://www.ebi.ac.uk/chebi/	https://www.ebi.ac.uk/chebi/searchId.do?chebiId=$id	CHEBI:36927	metabolite		1	urn:miriam:chebi	^(CHEBI:)?\d+$	ChEBI	P683	chebi	metabolite
+Chemspider	Cs	https://www.chemspider.com/	https://www.chemspider.com/$id	56586	metabolite		1	urn:miriam:chemspider	^\d+$	ChemSpider	P661	chemspider	metabolite
 CodeLink	Ge	http://www.appliedmicroarrays.com/		GE86325	probe		0	Ge		CodeLink		codelink	probe
 Complex Portal	Cpx	https://www.ebi.ac.uk/complexportal/	https://www.ebi.ac.uk/complexportal/complex/$id	CPX-373	complex		1	urn:miriam:complexportal	^CPX-[0-9]+$	Complex Portal		complexportal	complex
 Database of Interacting Proteins	Dip	http://dip.doe-mbi.ucla.edu/	http://dip.doe-mbi.ucla.edu/dip/DIPview.cgi?ID=$id	DIP-743N	interaction		1	urn:miriam:dip	^DIP[\:\-]\d{3}[EN]$	Database of Interacting Proteins		dip	interaction
