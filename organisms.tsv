@@ -7,6 +7,7 @@ Bacillus	subtilis	Bsubtilis	Bs	1423
 Beta 	vulgaris 	Sugar Beet 	Bv	3555
 Bos	taurus	Cow	Bt	9913
 Brassica 	napus 	Rapeseed 	Bn	3708
+Coffea	arabica	Coffee	Ca	13443
 Caenorhabditis	elegans	Celegans	Ce	6239
 Canis	familiaris	Dog	Cf	9615
 Ciona	intestinalis	Sea Squirt	Ci	7719
@@ -36,6 +37,7 @@ Oryza	sativa	Japanese Rice	Os	4530
 Oryzias	latipes	Medaka Fish	Ol	8090
 Ovis	aries	sheep	Ova	9940
 Pan 	troglodytes	Chimp	Pt	9598
+Perilla	frutescens	Beefsteak plant	Pe	48386
 Plasmodium	falciparum	Malaria parasite	Pf	5833
 Prymnesium	parvum		Pp	97485
 Populus	trichocarpa	Western Balsam Poplar	Pi	3694
