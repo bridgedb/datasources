@@ -11,6 +11,7 @@ Coffea	arabica	Coffee	Ca	13443
 Caenorhabditis	elegans	Celegans	Ce	6239
 Canis	familiaris	Dog	Cf	9615
 Ciona	intestinalis	Sea Squirt	Ci	7719
+Citrus	sinensis	Sweet orange	Cs	2711
 Clostridium	thermocellum	Cthe	Ct	1515
 Caulobacter	vibrioides		Cv	155892
 Danio	rerio	Zebrafish	Dr	7955
@@ -38,6 +39,7 @@ Oryza	sativa	Japanese Rice	Os	4530
 Oryzias	latipes	Medaka Fish	Ol	8090
 Ovis	aries	sheep	Ova	9940
 Pan 	troglodytes	Chimp	Pt	9598
+Paullinia	cupana	Guarana	Pc	392747
 Perilla	frutescens	Beefsteak plant	Pe	48386
 Plasmodium	falciparum	Malaria parasite	Pf	5833
 Prymnesium	parvum		Pp	97485
@@ -51,6 +53,7 @@ Solanum	tuberosum		St	4113
 Sorex	araneus	Shrew	Sa	42254
 Sorghum	bicolor	Sorghum	Sb	4558
 Sus	scrofa	Pig	Ss	9823
+Theobroma	cacao	Cocoa	Tc	3641
 Tetraodon	nigroviridis	Pufferfish	Tn	99883
 Vitis	vinifera	Wine Grape	Vv	29760
 Xenopus	tropicalis	Xenopus	Xt	8364
