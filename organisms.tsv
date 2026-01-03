@@ -1,18 +1,27 @@
 genus	species	short name	symbol	ncbi
 Acetobacterium	woodii		Aw	33952
+Agapanthus	africanus	African lily	Al	51501
 Anopheles	gambiae	Mosquito	Ag	7165
 Arabidopsis	thaliana	Arabidopsis	At	3702
+Artemisia	annua		Aa	35608
 Aspergillus 	niger	Black mold	An	5061
 Bacillus	subtilis	Bsubtilis	Bs	1423
 Beta 	vulgaris 	Sugar Beet 	Bv	3555
 Bos	taurus	Cow	Bt	9913
-Brassica 	napus 	Rapeseed 	Bn	3708
+Brassica	napus 	Rapeseed 	Bn	3708
+Brassica	oleracea	Wild cabbage	Bo	3712
 Coffea	arabica	Coffee	Ca	13443
 Caenorhabditis	elegans	Celegans	Ce	6239
 Canis	familiaris	Dog	Cf	9615
+Capsicum	annuum		Caa	4072
+Catharanthus	roseus	Madagascar periwinkle	Car	4058
+Chlamydomonas	reinhardtii		Cr	3055
+Cicer	arietinum	Chickpea	Cia	3827
 Ciona	intestinalis	Sea Squirt	Ci	7719
 Citrus	sinensis	Sweet orange	Cs	2711
 Clostridium	thermocellum	Cthe	Ct	1515
+Cucumis	melo	Muskmelon	Cme	3656
+Cucumis	sativus	Cucumber	Cu	3659
 Caulobacter	vibrioides		Cv	155892
 Danio	rerio	Zebrafish	Dr	7955
 Daphnia	magna		Da	35525
@@ -21,6 +30,7 @@ Dasypus	novemcinctus	Armadillo	Dn	9361
 Drosophila	melanogaster	Fruitfly	Dm	7227
 Echinops	telfairi	Hedgehog	Et	9371
 Equus	caballus	Horse	Qc	9796
+Erythroxylum	coca		Erc	289672
 Escherichia	coli	Ecoli	Ec	562
 Gallus	gallus	Chicken	Gg	9031
 Glycine	max	Soybean	Gm	3847
@@ -28,20 +38,29 @@ Gibberella	zeae	Fusarium graminearum	Gz	5518
 Homo	sapiens	Human	Hs	9606
 Hordeum 	vulgare 	Barley 	Hv	4513
 Ilex	paraguariensis	Yerba mate	Ip	185542
+Lathyrus	oleraceus	Garden Pea	Ps	3888
 Loxodonta	africana	Elephant	La	9785
 Macaca	mulatta	Rhesus Monkey	Ml	9544
+Malus	domestica	Apple	Mad	3750
 Monodelphis	domestica	Opossum	Md	13616
 Mus	musculus	Mouse	Mm	10090
 Mycobacterium	tuberculosis	Mtuberculosis	Mx	1773
 Nicotiana	tabacum	Tabacco	Nt	4097
+Ocimum	basilicum	Basil	Ob	39350
 Ornithorhynchus	anatinus	Platypus	Oa	9258
 Oryctolagus	cuniculus	Rabbit	Oc	9986
 Oryza	sativa	Japanese Rice	Os	4530
 Oryzias	latipes	Medaka Fish	Ol	8090
 Ovis	aries	sheep	Ova	9940
 Pan 	troglodytes	Chimp	Pt	9598
+Papaver	somniferum	Opium poppy	Pas	3469
 Paullinia	cupana	Guarana	Pc	392747
 Perilla	frutescens	Beefsteak plant	Pe	48386
+Petunia	x hybrida		Pxh	4102
+Phaseolus	vulgaris	Common bean	Pv	3885
+Physcomitrium	patens		Pha	3218
+Picea	abies	Norway spruce	Pia	3329
+Pinus	taeda	Loblolly pine	Pit	3352
 Plasmodium	falciparum	Malaria parasite	Pf	5833
 Prymnesium	parvum		Pp	97485
 Populus	trichocarpa	Western Balsam Poplar	Pi	3694
@@ -50,13 +69,26 @@ Rosmarinus	officinalis	Rosemary	Ro	39367
 Saccharomyces	cerevisiae	Yeast	Sc	4932
 Salvia	fruticosa	Greek sage	Sf	268906
 Skeletonema	marinoi		Sm	267567
+Solanum	habrochaites		Sh	62890
 Solanum	lycopersicum	Tomato	Sl	4081
-Solanum	tuberosum		St	4113
+Solanum	tuberosum	Potato	St	4113
 Sorex	araneus	Shrew	Sa	42254
 Sorghum	bicolor	Sorghum	Sb	4558
+Spinacia	oleracea	Spinach	So	3562
 Sus	scrofa	Pig	Ss	9823
 Theobroma	cacao	Cocoa	Tc	3641
 Tetraodon	nigroviridis	Pufferfish	Tn	99883
+Triglochin	maritima		Tm	55501
+Ulva	curvata	Green algea	Uc	135247
 Vitis	vinifera	Wine Grape	Vv	29760
 Xenopus	tropicalis	Xenopus	Xt	8364
 Zea	mays	Maize	Zm	4577
+Glycyrrhiza	glabra	Liquorice	Gl	49827
+Abies	grandis	Grand fir	Abg	46611
+Lotus	japonicus		Lj	34305
+Manihot	esculenta	Cassava	Me	3983
+Medicago	sativa	Alfalfa	Ma	3879
+Vigna	radiata		Vr	157791
+Camellia	sinensis		Cas	4442
+Lupinus	luteus	Yellow lupine	Llu	3873
+Ricinus	communis	Castor bean	Ri	3988
