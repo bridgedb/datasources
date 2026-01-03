@@ -124,7 +124,7 @@ SWISS-MODEL	Sw	http://swissmodel.expasy.org/	http://swissmodel.expasy.org/reposi
 SwissLipids	Sl	http://www.swisslipids.org/	http://www.swisslipids.org/#/entity/$id/	SLM:000048885	metabolite		1		^SLM:\d+$	SwissLipids		slm	metabolite
 Systems Biology Ontology	Sbo	http://www.ebi.ac.uk/sbo/	http://www.ebi.ac.uk/sbo/main/$id	SBO:0000262	ontology		1	urn:miriam:sbo	^SBO:\d{7}$	Systems Biology Ontology		sbo	ontology
 TAIR	A	https://www.arabidopsis.org/	https://www.arabidopsis.org/locus?accession=$id	2200950	gene	Arabidopsis thaliana	1	urn:miriam:tair.locus	^\d{5}$	TAIR Locus		tair.locus	gene
-TAIR gene name	Agn	https://www.arabidopsis.org/	https://www.arabidopsis.org/locus?name=$id	AT1G01030	gene	Arabidopsis thaliana	1	urn:miriam:tair.name	^AT[1-5]G\d{5}$	TAIR gene name		tair.name	gene
+TAIR gene name	Agn	https://www.arabidopsis.org/	https://www.arabidopsis.org/locus?name=$id	AT1G01030	gene	Arabidopsis thaliana	1	urn:miriam:tair.name	^AT[1-5]G\d{5}$	TAIR gene name		araport	gene
 TIGR	Ti	http://www.jcvi.org/		12012.t00308	gene		1	Ti		TIGR			gene
 TTD Drug	Td	http://bidd.nus.edu.sg/group/cjttd/TTD_HOME.asp	http://bidd.nus.edu.sg/group/cjttd/ZFTTDDRUG.asp?ID=$id	DAP000773	metabolite		1	urn:miriam:ttd.drug	^DAP\d+$	TTD Drug		ttd.drug	metabolite
 TTD Target	Tt	http://bidd.nus.edu.sg/group/cjttd/TTD_HOME.asp	http://bidd.nus.edu.sg/group/cjttd/ZFTTDDetail.asp?ID=$id	TTDS00056	protein		1	urn:miriam:ttd.target	^TTDS\d+$	TTD Target		ttd.target	protein
