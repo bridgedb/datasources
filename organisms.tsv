@@ -99,7 +99,7 @@ Capsicum	chinense		Cch	80379
 Capsicum	frutescens		Cfr	4073
 Carapichea	ipecacuanha		Cip	77880
 Carica	papaya		Cp	3649
-Carpobrotus	acinaciformis		Xxx	1053334
+Carpobrotus	acinaciformis		Caa	1053334
 Carthamus	tinctorius		Cti	4222
 Carum	carvi		Cc	48032
 Catharanthus	roseus	Madagascar periwinkle	Car	4058
@@ -123,18 +123,18 @@ Cinchona	macrocalyx		Cma	273779
 Cinchona	mutisii		Cmu	273780
 Cinchona	officinalis		Co	273781
 Cinchona	pitayensis		Cpi	128294
-Cinchona	pubescens		Xxx	50278
+Cinchona	pubescens		Cpu	50278
 Cinnamomum	tenuipile		Cte	192326
 Ciona	intestinalis	Sea Squirt	Ci	7719
 Citrullus	lanatus		Cl	3654
-Citrus	× aurantium		Xxx	43166
-Citrus	× clementina		C× 	85681
+Citrus	× aurantium		Cxa	43166
+Citrus	× clementina		Cxc 	85681
 Citrus	hanaju		Ch	481547
 Citrus	japonica		Cj	76966
 Citrus	junos		Cju	135197
 Citrus	maxima		Cim	37334
 Citrus	× microcarpa		Ci×	164113
-Citrus	× paradisi		Xxx	37656
+Citrus	× paradisi		Cxp	37656
 Citrus	sinensis	Sweet orange	Cs	2711
 Citrus	trifoliata		Cit	37690
 Citrus	unshiu		Cun	55188
@@ -150,10 +150,8 @@ Coffea	arabica	Coffee	Ca	13443
 Coffea	canephora		Coc	49390
 Coffea	eugenioides		Ceu	49369
 Coffea	liberica		Col	49373
-Coix	lacryma-jobi		Xxx	4505
 Coleus	scutellarioides		Csc	4142
 Consolida	orientalis		Cor	565971
-Coptis	chinensis		Xxx	261450
 Coptis	japonica		Coj	3442
 Coptis	teeta		Cot	261448
 Corallococcus	coralloides		Cco	184914
@@ -292,7 +290,6 @@ Lotus	japonicus		Lj	34305
 Loxodonta	africana	Elephant	La	9785
 Lunaria	annua		Lan	153659
 Lupinus	albus		Lua	3870
-Lupinus	angustifolius		Xxx	3871
 Lupinus	luteus	Yellow lupine	Llu	3873
 Lupinus	polyphyllus		Lpo	3874
 Lygodium	circinatum		Lci	84615
@@ -314,7 +311,7 @@ Mentha	spicata		Ms	29719
 Methanocaldococcus	jannaschii		Mj	2190
 Methanosarcina	mazei		Mem	1434114
 Methanosarcina	thermophila		Mt	2210
-Methanothermobacter	marburgensis		Xxx	145263
+Methanothermobacter	marburgensis		Mmb	145263
 Methyloceanibacter	caenitepidi		Mc	1384459
 Methylococcus	capsulatus		Mca	414
 Methylorubrum	extorquens		Mex	408
@@ -374,14 +371,14 @@ Perilla	frutescens	Beefsteak plant	Pe	48386
 Persea	americana		Pa	3435
 Persicaria	tinctoria		Pti	96455
 Petiveria	alliacea		Pal	46142
-Petroselinum	crispum		Xxx	4043
+Petroselinum	crispum		Pcs	4043
 Petunia	x hybrida		Pxh	4102
 Phaseolus	coccineus		Pco	3886
 Phaseolus	lunatus		Plu	3884
 Phaseolus	vulgaris	Common bean	Pv	3885
 Phlebodium	aureum		Pau	218620
 Phleum	pratense		Ppr	15957
-Phragmites	australis		Xxx	29695
+Phragmites	australis		Phu	29695
 Physaria	fendleri		Pfe	63442
 Physaria	lindheimeri		Pl	439687
 Physcomitrium	patens		Pha	3218
@@ -450,7 +447,7 @@ Salvia	fruticosa	Greek sage	Sf	268906
 Salvia	fruticosa		Sfr	268906
 Salvia	officinalis		Sao	38868
 Salvia	rosmarinus		Sr	39367
-Salvia	splendens		Xxx	180675
+Salvia	splendens		Spl	180675
 Sanguinaria	canadensis		Sca	3472
 Santalum	album		Saa	35974
 Santalum	austrocaledonicum		Sau	293154
@@ -478,7 +475,7 @@ Simmondsia	chinensis		Sch	3999
 Sinningia	cardinalis		Sic	189007
 Sinopodophyllum	hexandrum		She	93608
 Skeletonema	marinoi		Sm	267567
-Solanum	aculeatissimum		Xxx	267265
+Solanum	aculeatissimum		Scl	267265
 Solanum	habrochaites		Sh	62890
 Solanum	lycopersicum	Tomato	Sl	4081
 Solanum	melongena		Som	4111
