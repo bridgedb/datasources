@@ -81,6 +81,7 @@ Mondo	Mo	https://mondo.monarchinitiative.org/	https://monarchinitiative.org/dise
 NanoMILE	Nmnm	https://cordis.europa.eu/project/id/310451		NP00262	material		1		^NP\d{5}$				material
 NASC Gene	N	http://arabidopsis.info/		ATMG00960-TAIR-G	gene	Arabidopsis thaliana	1	N	AT[\dCM]G\d{5}\-TAIR\-G	NASC Gene			gene
 NCBI Protein	Np	http://www.ncbi.nlm.nih.gov/protein	http://www.ncbi.nlm.nih.gov/protein/$id	CAA71118.1	protein		1	urn:miriam:ncbiprotein	^\w+\d+(\.\d+)?$	NCBI Protein		ncbiprotein	protein
+NCBI Taxonomy	Nt	https://www.ncbi.nlm.nih.gov/datasets/taxonomy/	https://www.ncbi.nlm.nih.gov/datasets/taxonomy/$id	2170610	species		1	urn:miriam:taxonomy	^\d+$	NCBI Taxonomy		ncbitaxon	species
 NCI Pathway Interaction Database	Pid	http://pid.nci.nih.gov/	http://pid.nci.nih.gov/search/pathway_landing.shtml?what=graphic&jpg=on&pathway_id=$id	pi3kcipathway	pathway		1	urn:miriam:pid.pathway	^\w+$	NCI Pathway Interaction Database		pid.pathway	pathway
 OMIM	Om	http://omim.org/	http://omim.org/entry/$id	603903	gene		0	urn:miriam:mim	^[*#+%^]?\d{6}$	OMIM	P492	omim	gene,disease
 OpenTargets	Opt	https://www.opentargets.org/	https://genetics.opentargets.org/gene/$id	ENSG00000169174	gene		1		^ENS[A-Z]*[FPTG]\d{11}$				gene
