@@ -29,7 +29,7 @@ MANUAL = {
     "Rfam": "rfam",
     "MaizeGDB": "maizegdb.locus",
     "SwissLipids": "swisslipid",
-    "VMH metabolite": "vmhmetabolite",
+    "VMH metabolite": "vmh.metabolite",
     "XMetDB": "xmetdb",
     "Brl": "brenda.ligand",
     "Gg": "gramene.gene",
