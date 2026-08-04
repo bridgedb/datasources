@@ -32,6 +32,7 @@ European Registry of Materials	Nmerm	https://nanocommons.github.io/identifiers/	
 FlyBase	F	http://flybase.org/	http://flybase.org/reports/$id.html	FBgn0011293	gene	Drosophila melanogaster	1	urn:miriam:fb	^FB\w{2}\d{7}$	FlyBase	P3852	flybase	gene
 GenBank	G	http://www.ncbi.nlm.nih.gov/genbank/	http://www.ncbi.nlm.nih.gov/nuccore/$id	NW_004190323	gene		0	urn:miriam:insdc	(\w\d{5})|(\w{2}\d{6})|(\w{3}\d{5})	GenBank		insdc	gene
 Gene Wiki	Gw	http://en.wikipedia.org/wiki/Portal:Gene_Wiki	http://plugins.biogps.org/cgi-bin/wp.cgi?id=$id	1017	gene		0	urn:miriam:genewiki	\d+	Gene Wiki	P351	genewiki	gene
+GeneCards	Gc	https://www.genecards.org/	https://www.genecards.org/card/$id	BRCA1	gene	Homo sapiens	0	urn:miriam:genecards	^[A-Za-z-0-9_]+(\@)?$	GeneCards		genecards.gene	gene
 GeneOntology	T	http://www.ebi.ac.uk/QuickGO/	http://www.ebi.ac.uk/QuickGO/GTerm?id=$id	GO:0006915	ontology		0	urn:miriam:go	^GO:\d{7}$	Gene Ontology	P686	go	ontology
 Gramene Arabidopsis	EnAt	https://www.gramene.org/	https://plants.ensembl.org/id/$id	ATMG01360	gene	Arabidopsis thaliana	1	EnAt	AT[\dCM]G\d{5}	Gramene Arabidopsis		ensembl.plant	gene
 Gramene Genes DB	Gg	https://www.gramene.org/	https://archive.gramene.org/db/genes/search_gene?acc=$id	GR:0060184	gene		1	Gg	GR:\d+	Gramene Genes		gramene.gene	gene
