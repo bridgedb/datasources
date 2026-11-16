@@ -227,7 +227,7 @@ Gemmata	obscuriglobus		Go	114
 Gentiana	straminea		Gs	50768
 Gentiana	triflora		Gt	55190
 Gerbera	hybrid		Ghy	18101
-Gibberella	zeae	Fusarium graminearum	Gz	5518
+Gibberella	zeae	Fusarium graminearum	Fg	5518
 Ginkgo	biloba		Gb	3311
 Glandularia	× hybrida		G×	76714
 Glebionis	segetum		Gse	118509
@@ -354,7 +354,9 @@ Ophiorrhiza	japonica		Opj	367363
 Ophiorrhiza	pumila		Op	157934
 Ornithorhynchus	anatinus	Platypus	Oa	9258
 Oryctolagus	cuniculus	Rabbit	Oc	9986
-Oryza	sativa	Japanese Rice	Os	4530
+Oryza	sativa	Asian cultivated rice	Os	4530
+Oryza	sativa Japonica Group	Japanese Rice	Oj	39947
+Oryza	sativa Indica Group	Long-grained rice	Oi	39946
 Oryzias	latipes	Medaka Fish	Ol	8090
 Ovis	aries	sheep	Ova	9940
 Oxybasis	rubra		Or	3560
