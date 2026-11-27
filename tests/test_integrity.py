@@ -61,17 +61,29 @@ class TestIntegrity(unittest.TestCase):
     def test_valid_bioregistry(self):
         """Test that Bioregistry prefixes are valid."""
         for i, line in enumerate(self.rows, start=1):
-            resource, bioregistry_prefix = line[0], line[12]
+            resource, wikidata, bioregistry_prefix = line[0], line[11], line[12]
             if not bioregistry_prefix:
                 continue
             with self.subTest(resource=resource, prefix=bioregistry_prefix):
-                norm_prefix = bioregistry.normalize_prefix(bioregistry_prefix)
+                br_resource = bioregistry.get_resource(bioregistry_prefix)
                 self.assertIsNotNone(
-                    norm_prefix,
+                    br_resource,
                     msg=f"unrecognized Bioregistry prefix: {bioregistry_prefix} in {resource}",
                 )
                 self.assertEqual(
                     bioregistry_prefix,
-                    norm_prefix,
+                    br_resource.prefix,
                     msg="unstandardized Bioregistry prefix",
                 )
+                if br_wikidata := br_resource.get_mapped_prefix("wikidata.property"):
+                    self.assertIsNotNone(wikidata)
+                    self.assertNotEqual(
+                        "",
+                        wikidata,
+                        msg=f"{resource}: empty wikidata property which is annotated in the Bioregistry as {br_wikidata}",
+                    )
+                    self.assertEqual(
+                        br_wikidata,
+                        wikidata,
+                        msg=f"{resource}: wikidata property in Bioregistry is not same as in BridgeDB datasources",
+                    )
