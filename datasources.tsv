@@ -17,7 +17,7 @@ ChEMBL compound	Cl	https://www.ebi.ac.uk/chembldb/	https://www.ebi.ac.uk/chembl/
 ChEBI	Ce	https://www.ebi.ac.uk/chebi/	https://www.ebi.ac.uk/chebi/searchId.do?chebiId=$id	CHEBI:36927	metabolite		1	urn:miriam:chebi	^(CHEBI:)?\d+$	ChEBI	P683	chebi	metabolite
 Chemspider	Cs	https://www.chemspider.com/	https://www.chemspider.com/$id	56586	metabolite		1	urn:miriam:chemspider	^\d+$	ChemSpider	P661	chemspider	metabolite
 CodeLink	Ge	http://www.appliedmicroarrays.com/		GE86325	probe		0	Ge		CodeLink		codelink	probe
-Complex Portal	Cpx	https://www.ebi.ac.uk/complexportal/	https://www.ebi.ac.uk/complexportal/complex/$id	CPX-373	complex		1	urn:miriam:complexportal	^CPX-[0-9]+$	Complex Portal		complexportal	complex
+Complex Portal	Cpx	https://www.ebi.ac.uk/complexportal/	https://www.ebi.ac.uk/complexportal/complex/$id	CPX-373	complex		1	urn:miriam:complexportal	^CPX-[0-9]+$	Complex Portal	P7718	complexportal	complex
 Database of Interacting Proteins	Dip	http://dip.doe-mbi.ucla.edu/	http://dip.doe-mbi.ucla.edu/dip/DIPview.cgi?ID=$id	DIP-743N	interaction		1	urn:miriam:dip	^DIP[\:\-]\d{3}[EN]$	Database of Interacting Proteins		dip	interaction
 dbSNP	Sn	http://www.ncbi.nlm.nih.gov/sites/entrez?db=snp	http://www.ncbi.nlm.nih.gov/projects/SNP/snp_ref.cgi?rs=$id	121909098	gene		1	urn:miriam:dbsnp	^\d+$	dbSNP	P6861	dbsnp	gene
 DrugBank	Dr	http://www.drugbank.ca/	http://www.drugbank.ca/drugs/$id	DB00001	metabolite		1	urn:miriam:drugbank	^D(B|BSALT|BCAT)(\d{1})?\d{5}$	DrugBank	P715	drugbank	metabolite
@@ -47,10 +47,10 @@ HGNC Accession number	Hac	http://www.genenames.org	https://www.genenames.org/dat
 HMDB	Ch	http://www.hmdb.ca/	http://www.hmdb.ca/metabolites/$id	HMDB0000001	metabolite		1	urn:miriam:hmdb	^HMDB(\d{2})?\d{5}$	HMDB	P2057	hmdb	metabolite
 HomoloGene	Hg	http://www.ncbi.nlm.nih.gov/homologene/	http://www.ncbi.nlm.nih.gov/homologene/$id	1000	gene		1	urn:miriam:homologene	^\d+$	HomoloGene	P593	homologene	gene
 HPRD	Hp	http://www.hprd.org/			interaction	Homo sapiens	1	urn:miriam:hprd		HPRD		hprd	interaction
-Human Disease Ontology	Do	http://www.disease-ontology.org	https://disease-ontology.org/?id=$id	DOID:11337	unknown	Homo sapiens	1	urn:miriam:doid	^DOID\:\d+$	Disease Ontology		doid	unknown,ontology,disease
-ICD-9	ICD9	http://www.who.int/classifications/icd/en/	http://www.icd9data.com/getICD9Code.ashx?icd9=$id	104	unknown	Homo sapiens	1	ICD9	^\d+$	International Classification of Diseases		icd9	unknown
-ICD-10	ICD10	http://www.who.int/classifications/icd/en/	http://apps.who.int/classifications/icd10/browse/2010/en#/{$id}	C34	unknown	Homo sapiens	1	ICD10	^[A-Z]\d+(\.[-\d+])?$	International Classification of Diseases		icd10	unknown
-ICD-11	ICD11	http://www.who.int/classifications/icd/en/		1A95	unknown	Homo sapiens	1	ICD11	^([A-Z]|\d)+(\d|[A-Z])\d+$	International Classification of Diseases		icd11	unknown
+Human Disease Ontology	Do	http://www.disease-ontology.org	https://disease-ontology.org/?id=$id	DOID:11337	unknown	Homo sapiens	1	urn:miriam:doid	^DOID\:\d+$	Disease Ontology	P699	doid	unknown,ontology,disease
+ICD-9	ICD9	http://www.who.int/classifications/icd/en/	http://www.icd9data.com/getICD9Code.ashx?icd9=$id	104	unknown	Homo sapiens	1	ICD9	^\d+$	International Classification of Diseases	P493	icd9	unknown
+ICD-10	ICD10	http://www.who.int/classifications/icd/en/	http://apps.who.int/classifications/icd10/browse/2010/en#/{$id}	C34	unknown	Homo sapiens	1	ICD10	^[A-Z]\d+(\.[-\d+])?$	International Classification of Diseases	P494	icd10	unknown
+ICD-11	ICD11	http://www.who.int/classifications/icd/en/		1A95	unknown	Homo sapiens	1	ICD11	^([A-Z]|\d)+(\d|[A-Z])\d+$	International Classification of Diseases	P7807	icd11	unknown
 Illumina	Il	http://www.illumina.com/		ILMN_5668	probe		0	Il	ILMN_\d+	Illumina		illumina.probe	probe
 InChIKey	Ik	http://inchi.org/		QTBSBXVTEAMEQO-UHFFFAOYSA-N	metabolite		1	urn:miriam:inchikey	^[A-Z]{14}\-[A-Z]{10}(\-[A-Z])?	Standard InChIKey	P235	inchikey	metabolite
 IntAct	Ia	http://www.ebi.ac.uk/intact/	http://www.ebi.ac.uk/intact/pages/details/details.xhtml?interactionAc=$id	EBI-2307691	interaction		1	urn:miriam:intact	^EBI\-[0-9]+$	IntAct		intact	interaction
@@ -71,7 +71,7 @@ LipidBank	Lb	http://lipidbank.jp/index.html	http://lipidbank.jp/cgi-bin/detail.c
 MACiE	Ma	http://www.ebi.ac.uk/thornton-srv/databases/MACiE/index.html	http://www.ebi.ac.uk/thornton-srv/databases/cgi-bin/MACiE/entry/getPage.pl?id=$id	M0001	protein		1	urn:miriam:macie	^M\d{4}$	MACiE		macie	protein
 MaizeGDB	Mg	https://maizegdb.org/	https://maizegdb.org/gene_center/gene/$id	acc1	gene	Zea mays	1	Mg		MaizeGDB		maizegdb.locus	gene
 MatrixDB	Md	http://matrixdb.univ-lyon1.fr/	http://matrixdb.univ-lyon1.fr/association/$id	P00747_P07355	interaction		1	urn:miriam:matrixdb.association	^([A-N,R-Z][0-9][A-Z][A-Z, 0-9][A-Z, 0-9][0-9])_.*|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9]_.*)|(GAG_.*)|(MULT_.*)|(PFRAG_.*)|(LIP_.*)|(CAT_.*)$	MatrixDB		matrixdb.association	interaction
-MeSH	Me	http://id.nlm.nih.gov/mesh/	http://id.nlm.nih.gov/mesh/$id	C000100	other		1	urn:miriam:mesh	^(C|D)\d{6}$	Medical Subject Headings		mesh	disease,metabolite,gene,other
+MeSH	Me	http://id.nlm.nih.gov/mesh/	http://id.nlm.nih.gov/mesh/$id	C000100	other		1	urn:miriam:mesh	^(C|D)\d{6}$	Medical Subject Headings	P486	mesh	disease,metabolite,gene,other
 MetaboLights Compounds	Ml	http://www.ebi.ac.uk/metabolights/	http://www.ebi.ac.uk/metabolights/$id	MTBLC17170	metabolite		1	Ml	^MTBLC\d{1,6}$	MetaboLights Compounds	P3890	metabolights	metabolite
 MetaCyc	Mc	http://www.metacyc.org/	http://www.metacyc.org/META/NEW-IMAGE?type=NIL&object=$id	D-GLUTAMATE-OXIDASE-RXN	interaction		1	Mc		MetaCyc		metacyc.reaction	interaction
 MGI	M	http://www.informatics.jax.org/	http://www.informatics.jax.org/marker/$id	MGI:2442292	gene	Mus musculus	1	urn:miriam:mgi	^MGI:\d+$	Mouse Genome Database	P671	mgi	gene
@@ -82,12 +82,12 @@ Mondo	Mo	https://mondo.monarchinitiative.org/	https://monarchinitiative.org/dise
 NanoMILE	Nmnm	https://cordis.europa.eu/project/id/310451		NP00262	material		1		^NP\d{5}$				material
 NASC Gene	N	http://arabidopsis.info/		ATMG00960-TAIR-G	gene	Arabidopsis thaliana	1	N	AT[\dCM]G\d{5}\-TAIR\-G	NASC Gene			gene
 NCBI Protein	Np	http://www.ncbi.nlm.nih.gov/protein	http://www.ncbi.nlm.nih.gov/protein/$id	CAA71118.1	protein		1	urn:miriam:ncbiprotein	^\w+\d+(\.\d+)?$	NCBI Protein		ncbiprotein	protein
-NCBI Taxonomy	Nt	https://www.ncbi.nlm.nih.gov/datasets/taxonomy/	https://www.ncbi.nlm.nih.gov/datasets/taxonomy/$id	2170610	species		1	urn:miriam:taxonomy	^\d+$	NCBI Taxonomy		ncbitaxon	species
+NCBI Taxonomy	Nt	https://www.ncbi.nlm.nih.gov/datasets/taxonomy/	https://www.ncbi.nlm.nih.gov/datasets/taxonomy/$id	2170610	species		1	urn:miriam:taxonomy	^\d+$	NCBI Taxonomy	P685	ncbitaxon	species
 NCI Pathway Interaction Database	Pid	http://pid.nci.nih.gov/	http://pid.nci.nih.gov/search/pathway_landing.shtml?what=graphic&jpg=on&pathway_id=$id	pi3kcipathway	pathway		1	urn:miriam:pid.pathway	^\w+$	NCI Pathway Interaction Database		pid.pathway	pathway
 OMIM	Om	http://omim.org/	http://omim.org/entry/$id	603903	gene		0	urn:miriam:mim	^[*#+%^]?\d{6}$	OMIM	P492	omim	gene,disease
 OpenTargets	Opt	https://www.opentargets.org/	https://genetics.opentargets.org/gene/$id	ENSG00000169174	gene		1		^ENS[A-Z]*[FPTG]\d{11}$				gene
 ORCID	orcid	https://orcid.org	https://orcid.org/$id	0000-0002-5355-2576	other	Homo sapiens	1	urn:miriam:orcid	^\d{4}-\d{4}-\d{4}-\d{3}(\d|X)$	ORCID	P496	orcid	other,author
-Orphanet	On	http://www.orpha.net/consor/	https://identifiers.org/orphanet:$id	85163	other	Homo sapiens	1	urn:miriam:orphanet	^\d+$	Bio2RDF		orpha	other
+Orphanet	On	http://www.orpha.net/consor/	https://identifiers.org/orphanet:$id	85163	other	Homo sapiens	1	urn:miriam:orphanet	^\d+$	Bio2RDF	P1550	orpha	other
 Oryzabase	Ob	http://www.shigen.nig.ac.jp/rice/oryzabase	http://www.shigen.nig.ac.jp/rice/oryzabase/gateway/gatewayAction.do?target=symbol&id=$id	468	gene	Oryza sativa	1	Ob		Oryzabase		oryzabase.gene	gene
 Other	O				gene		1	O		Other			other
 Pathway Commons	Pc	http://www.pathwaycommons.org/pc/	http://www.pathwaycommons.org/pc/record2.do?id=$id	485991	pathway		1	urn:miriam:pathwaycommons	^\d+$	Pathway Commons		pathwaycommons	pathway
@@ -109,7 +109,7 @@ PubMed Central	Pmc	https://www.ncbi.nlm.nih.gov/pmc/	https://www.ncbi.nlm.nih.go
 Reactome	Re	http://www.reactome.org/	https://reactome.org/content/detail/$id	R-HSA-201451	pathway		1	urn:miriam:reactome	(^R-[A-Z]{3}-\d+(-\d+)?(\.\d+)?$)|(^REACT_\d+(\.\d+)?$)	Reactome	P3937	reactome	pathway
 RefSeq	Q	http://www.ncbi.nlm.nih.gov/projects/RefSeq/	https://www.ncbi.nlm.nih.gov/protein/$id	NP_012345	gene		1	urn:miriam:refseq	^(NC|AC|NG|NT|NW|NZ|NM|NR|XM|XR|NP|AP|XP|ZP)_\d+$	RefSeq	P656	refseq	gene
 RESID	Res	http://www.ebi.ac.uk/RESID/	http://srs.ebi.ac.uk/srsbin/cgi-bin/wgetz?-id+6JSUg1NA6u4+-e+[RESID:'$id']	AA0001	protein		1	urn:miriam:resid	^AA\d{4}$	RESID		resid	protein
-Rfam	Rf		https://rfam.org/family/$id	RF00066	gene		1	Rf	RF\d+	RFAM		rfam	gene
+Rfam	Rf		https://rfam.org/family/$id	RF00066	gene		1	Rf	RF\d+	RFAM	P3523	rfam	gene
 RGD	R	https://rgd.mcw.edu/	https://rgd.mcw.edu/rgdweb/report/gene/main.html?id=$id	2018	gene	Rattus norvegicus	1	urn:miriam:rgd	^\d{4,7}$	Rat Genome Database	P3853	rgd	gene
 Rhea	Rh	http://www.ebi.ac.uk/rhea/	http://www.ebi.ac.uk/rhea/reaction.xhtml?id=$id	12345	interaction		1	urn:miriam:rhea	^\d{5}$	Rhea		rhea	interaction
 Rice Ensembl Gene	Os	https://www.gramene.org/Oryza_sativa	https://plants.ensembl.org/id/$id	Os04g54800	gene	Oryza sativa	1	Os	^Os.*$	Rice Ensembl Gene		ensembl.plant	gene
@@ -123,7 +123,7 @@ SubstrateDB	Sdb	http://substrate.burnham.org/	http://substrate.burnham.org/prote
 SubtiWiki	Bsu	http://www.subtiwiki.uni-goettingen.de/wiki/index.php/Main_Page	http://www.subtiwiki.uni-goettingen.de/wiki/index.php/$id	BSU29180	gene	Bacillus subtilis	1	urn:miriam:subtiwiki	^BSU\d{5}$	SubtiWiki		subtiwiki	gene
 SUPFAM	Sf	http://supfam.org/SUPERFAMILY/	http://supfam.org/SUPERFAMILY/cgi-bin/scop.cgi?ipid=$id	SSF57615	protein		1	urn:miriam:supfam	^\w+$	SUPFAM		supfam	protein
 SWISS-MODEL	Sw	http://swissmodel.expasy.org/	http://swissmodel.expasy.org/repository/smr.php?sptr_ac=$id	P23298	protein		1	urn:miriam:swiss-model	^\w+$	SWISS-MODEL		swiss-model	protein
-SwissLipids	Sl	http://www.swisslipids.org/	http://www.swisslipids.org/#/entity/$id/	SLM:000048885	metabolite		1		^SLM:\d+$	SwissLipids		slm	metabolite
+SwissLipids	Sl	http://www.swisslipids.org/	http://www.swisslipids.org/#/entity/$id/	SLM:000048885	metabolite		1		^SLM:\d+$	SwissLipids	P8691	slm	metabolite
 Systems Biology Ontology	Sbo	http://www.ebi.ac.uk/sbo/	http://www.ebi.ac.uk/sbo/main/$id	SBO:0000262	ontology		1	urn:miriam:sbo	^SBO:\d{7}$	Systems Biology Ontology		sbo	ontology
 TAIR	A	https://www.arabidopsis.org/	https://www.arabidopsis.org/locus?accession=$id	2200950	gene	Arabidopsis thaliana	1	urn:miriam:tair.locus	^\d+$	TAIR Locus		tair.locus	gene
 TAIR gene name	Agn	https://www.arabidopsis.org/	https://www.arabidopsis.org/locus?name=$id	AT1G01030	gene	Arabidopsis thaliana	1	urn:miriam:tair.name	^AT[1-5]G\d{5}$	TAIR gene name		araport	gene
@@ -145,6 +145,6 @@ Wikipedia	Wi	http://www.wikipedia.org	https://en.wikipedia.org/wiki/$id	Acetate	
 WormBase	W	http://www.wormbase.org/	http://www.wormbase.org/db/gene/gene?name=$id;class=Gene	WBGene00000001	gene	Caenorhabditis elegans	1	urn:miriam:wb	^WBGene\d{8}$	WormBase	P3860	wormbase	gene
 XMetDB	Xm	http://www.xmetdb.org/	http://www.xmetdb.org/xmetdb/protocol/$id	XMETDB171	interaction		1		^XMETDB\d+$	Xenobiotics Metabolism Database		xmetdb	interaction
 ZFIN	Z	http://zfin.org	http://zfin.org/action/marker/view/$id	ZDB-GENE-041118-11	gene	Danio rerio	1	urn:miriam:zfin	ZDB\-GENE\-\d+\-\d+	ZFIN Gene	P3870	zfin	gene
-GitHub	github	https://github.com	https://github.com/$id	hbasaric	author		0	urn:miriam:github	^[a-zA-Z0-9-_]+(/[a-zA-Z0-9-_]+)?$	GitHub		github	author
-Cell Ontology	cl	https://obophenotype.github.io/cell-ontology/	https://www.ebi.ac.uk/ols/ontologies/cl/terms?obo_id=$id	0000062	ontology		1	urn:miriam:cl	^\d{7}$	Cell ontology		cl	ontology,cell
-Evidence Ontology	EcOnt	https://github.com/evidenceontology/evidenceontology/	https://www.ebi.ac.uk/ols/ontologies/eco/terms?obo_id=$id	0007807	ontology		1	urn:miriam:eco	^\d{7}$	Evidence ontology		eco	ontology,evidence
+GitHub	github	https://github.com	https://github.com/$id	hbasaric	author		0	urn:miriam:github	^[a-zA-Z0-9-_]+(/[a-zA-Z0-9-_]+)?$	GitHub	P2037	github	author
+Cell Ontology	cl	https://obophenotype.github.io/cell-ontology/	https://www.ebi.ac.uk/ols/ontologies/cl/terms?obo_id=$id	0000062	ontology		1	urn:miriam:cl	^\d{7}$	Cell ontology	P7963	cl	ontology,cell
+Evidence Ontology	EcOnt	https://github.com/evidenceontology/evidenceontology/	https://www.ebi.ac.uk/ols/ontologies/eco/terms?obo_id=$id	0007807	ontology		1	urn:miriam:eco	^\d{7}$	Evidence ontology	P3811	eco	ontology,evidence
